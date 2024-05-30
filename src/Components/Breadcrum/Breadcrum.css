@@ -1,0 +1,46 @@
+/* General reset and styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.breadcrum {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: #333;
+}
+
+.breadcrum img {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+}
+
+.breadcrum a {
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.breadcrum a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .breadcrum {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 12px;
+  }
+
+  .breadcrum img {
+    margin: 5px 0;
+  }
+}

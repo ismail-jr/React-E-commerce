@@ -1,0 +1,31 @@
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.popular h1 {
+  color: #171717;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.popular hr {
+  width: 200px;
+  height: 2px;
+  background-color: #252525;
+  border: none;
+}
+
+.popular-item {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  overflow-x: auto; /* Enable horizontal scrolling if necessary */
+  padding-bottom: 100px;
+}
+
+.popular-item .item {
+  width: 280px; /* Set a fixed width for each item */
+}

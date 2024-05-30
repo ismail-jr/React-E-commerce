@@ -1,0 +1,56 @@
+/* RelatedProducts.css */
+
+/* General reset and styling */
+.related-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.related-products h1 {
+  color: #171717;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.related-products hr {
+  width: 200px;
+  height: 2px;
+  background-color: #252525;
+  border: none;
+}
+
+.related-product-items {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  overflow-x: auto; /* Enable horizontal scrolling if necessary */
+  padding-bottom: 100px;
+}
+
+.related-product-items .item {
+  width: 280px; /* Set a fixed width for each item */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .related-products h1 {
+    font-size: 24px; /* Decrease font size for smaller screens */
+  }
+
+  .related-products hr {
+    width: 150px; /* Decrease width of HR for smaller screens */
+  }
+
+  .related-product-items {
+    flex-direction: column; /* Change to column layout for smaller screens */
+    align-items: center; /* Center-align items */
+    padding-bottom: 20px; /* Adjust padding */
+  }
+
+  .related-product-items .item {
+    width: 100%; /* Make items full width */
+    max-width: 280px; /* Limit maximum width for smaller screens */
+  }
+}

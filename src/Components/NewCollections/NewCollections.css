@@ -1,0 +1,35 @@
+.collections {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns */
+  grid-auto-rows: auto; /* Automatically size rows */
+  gap: 20px; /* Gap between grid items */
+  justify-content: space-around; /* Space around columns */
+  margin-top: 50px;
+}
+
+.collections > * {
+  margin-bottom: 20px; /* Add margin below each item */
+}
+
+.new-collections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  overflow-x: hidden;
+  margin-bottom: 100px;
+}
+
+.new-collections h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.new-collections hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background: #252525;
+}

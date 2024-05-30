@@ -1,0 +1,119 @@
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.description-box {
+  width: 100%;
+}
+
+.description-box-navigator {
+  display: flex;
+
+  margin-bottom: 20px;
+}
+
+.description-box-nav-box {
+  padding: 15px 25px;
+  background-color: #f8f8f8;
+  color: #333;
+  border-radius: 8px;
+  cursor: pointer;
+  
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #333;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.description-box-nav-box.fade {
+  opacity: 0.5;
+}
+
+.description-box-description {
+  color: #555;
+  line-height: 1.6;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #333;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  margin: 10px 100px;
+}
+
+@media (max-width: 768px) {
+  .description-box-nav-box {
+    font-size: 14px;
+    padding: 15px 20px;
+  }
+
+  .description-box-description p {
+    font-size: 14px;
+  }
+} */
+/* DescriptionBox.css */
+
+/* General reset and styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.description-box {
+  width: 100%;
+}
+
+.description-box-navigator {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center; /* Align items vertically */
+  margin-bottom: 20px;
+  padding: 10px 90px;
+}
+
+.description-box-nav-box,
+.description-box-description {
+  padding: 15px 25px; /* Common padding */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #333;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.description-box-nav-box.fade {
+  opacity: 0.5;
+}
+
+.description-box-description {
+  color: #555;
+  line-height: 1.6;
+  margin: 10px 100px; /* Adjusted margin */
+}
+
+.description-box-description p {
+  text-align: center; /* Center-align text */
+}
+
+@media (max-width: 768px) {
+  .description-box-nav-box {
+    font-size: 14px;
+    padding: 15px 20px; /* Decreased padding */
+  }
+
+  .description-box-description p {
+    font-size: 14px;
+    margin: 10px; /* Adjusted margin */
+  }
+}
