@@ -10,17 +10,22 @@ const DescriptionBox = () => {
       </div>
       <div className="description-box-description">
         <p>
-          An e-commerce website is an online platform where businesses sell
-          products or services over the internet. It facilitates transactions
-          between buyers and sellers electronically, providing a virtual
-          marketplace accessible from anywhere with an internet connection.
+          Welcome to Shopify UCC clothing store, your go-to destination for
+          stylish and quality apparel for kids, women, and men. We provide a
+          wide range of trendy outfits, from everyday essentials to
+          fashion-forward pieces that suit all occasions.
         </p>
         <p>
-          An e-commerce website revolutionizes the way people shop by providing
-          a seamless, secure, and convenient online shopping experience. From
-          browsing products to making purchases and receiving deliveries,
-          e-commerce platforms empower customers to fulfill their needs and
-          preferences with just a few clicks or taps.
+          Our platform makes shopping easy and convenient, allowing you to
+          browse categories, select your favorite sizes, and place orders from
+          the comfort of your home. Whether you're looking for casual wear,
+          formal outfits, or fun kids' clothing, we aim to deliver high-quality
+          products with a seamless online experience.
+        </p>
+        <p>
+          With secure payments, fast shipping, and detailed product
+          descriptions, our e-commerce site empowers customers to shop
+          confidently and discover the perfect clothing for every style and age.
         </p>
       </div>
     </div>

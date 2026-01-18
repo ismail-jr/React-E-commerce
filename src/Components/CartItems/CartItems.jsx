@@ -171,7 +171,7 @@ const CartItems = () => {
             </div>
           );
         }
-        return null; // Return null for items not in the cart
+        return null;
       })}
       <div className="cart-items-down">
         <div className="cart-items-total">
