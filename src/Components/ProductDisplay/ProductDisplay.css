@@ -375,7 +375,10 @@ body {
   color: #777;
   margin-bottom: 5px;
 }
-
+.old-price {
+  color: red;
+  text-decoration: line-through;
+}
 .product-display-right-category span,
 .product-display-right-tags span {
   font-weight: bold;
