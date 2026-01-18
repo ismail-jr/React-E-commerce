@@ -12,7 +12,7 @@ export const Navbar = () => {
     <div className="navbar">
       <div className="nav-logo">
         <img src={logo} alt="" />
-        <p>SHOPIFY</p>
+        <p>SHOPIFY UCC</p>
       </div>
       <ul className="nav-menu">
         <li
