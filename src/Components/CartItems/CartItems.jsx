@@ -155,11 +155,11 @@ const CartItems = () => {
                   className="cart-icon-product-icon"
                 />
                 <p>{e.name}</p>
-                <p className="np">${e.new_price}</p>
+                <p className="np"> GH₵{e.new_price}</p>
                 <button className="cart-items-quantity">
                   {cartItems[e.id]}
                 </button>
-                <p className="tt">${e.new_price * cartItems[e.id]}</p>
+                <p className="tt"> GH₵{e.new_price * cartItems[e.id]}</p>
                 <img
                   className="cart-remove"
                   src={remove_icon}
@@ -184,7 +184,7 @@ const CartItems = () => {
           </div>
           <div className="cart-total">
             <h3>Total</h3>
-            <h3>${getTotalAmount()}</h3>
+            <h3> GH₵{getTotalAmount()}</h3>
           </div>
           <button>PROCEED TO CHECKOUT</button>
         </div>
