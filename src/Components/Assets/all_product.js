@@ -34,21 +34,34 @@ import p33_img from "./product_33.png";
 import p34_img from "./product_34.png";
 import p35_img from "./product_35.png";
 import p36_img from "./product_36.png";
+import c3_img from "../Assets/c3.jpeg";
+import c12_img from "../Assets/c12.jpeg";
+import c20_img from "../Assets/c20.jpeg";
+import c4_img from "../Assets/c4.jpeg";
+import c5_img from "../Assets/c5.jpeg";
+import c18_img from "../Assets/c18.jpeg";
+import c14_img from "../Assets/c14.jpeg";
+import c13_img from "../Assets/c13.jpeg";
+import c16_img from "../Assets/c16.jpeg";
+// import c12_img from "../Assets/c12.jpeg";
+import c19_img from "../Assets/c19.jpeg";
+import c7_img from "../Assets/c7.jpeg";
+import c21_img from "../Assets/c21.jpeg";
 
 let all_product = [
   {
     id: 1,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Ghana Black Stars FIFA World Cup 2026 Supporters Jersey",
     category: "women",
-    image: p1_img,
+    image: c12_img,
     new_price: 50.0,
     old_price: 80.5,
   },
   {
     id: 2,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Cloth Top and Jeans Shorts",
     category: "women",
-    image: p2_img,
+    image: c7_img,
     new_price: 85.0,
     old_price: 120.5,
   },
@@ -56,7 +69,7 @@ let all_product = [
     id: 3,
     name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
     category: "women",
-    image: p3_img,
+    image: c3_img,
     new_price: 60.0,
     old_price: 100.5,
   },
@@ -70,9 +83,9 @@ let all_product = [
   },
   {
     id: 5,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Women Long Dress Animal Colourblock Sleeveless Round Neck",
     category: "women",
-    image: p5_img,
+    image: c20_img,
     new_price: 85.0,
     old_price: 120.5,
   },
@@ -94,9 +107,9 @@ let all_product = [
   },
   {
     id: 8,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Man White Solid Zippered Full-dress Shirt Top and Down Trouser",
     category: "women",
-    image: p8_img,
+    image: c19_img,
     new_price: 85.0,
     old_price: 120.5,
   },
@@ -152,7 +165,7 @@ let all_product = [
     id: 15,
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
     category: "men",
-    image: p15_img,
+    image: c4_img,
     new_price: 85.0,
     old_price: 120.5,
   },
@@ -166,9 +179,9 @@ let all_product = [
   },
   {
     id: 17,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Women Green Solid Zippered Full-Zip Slim Fit Bomber Straight Dress",
     category: "men",
-    image: p17_img,
+    image: c21_img,
     new_price: 85.0,
     old_price: 120.5,
   },
@@ -182,9 +195,9 @@ let all_product = [
   },
   {
     id: 19,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Men White Solid Zippered Full-dress Shirt Top and Down Trouser",
     category: "men",
-    image: p19_img,
+    image: c18_img,
     new_price: 85.0,
     old_price: 120.5,
   },
@@ -230,15 +243,15 @@ let all_product = [
   },
   {
     id: 25,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Girls African Print Ruffle Trim Dress",
     category: "kid",
-    image: p25_img,
+    image: c16_img,
     new_price: 85.0,
     old_price: 120.5,
   },
   {
     id: 26,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Boys Black Colourblocked Hooded Sweatshirt",
     category: "kid",
     image: p26_img,
     new_price: 85.0,
@@ -246,7 +259,7 @@ let all_product = [
   },
   {
     id: 27,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Boys Multi-colour Colourblocked Hooded Sweatshirt",
     category: "kid",
     image: p27_img,
     new_price: 85.0,
@@ -254,7 +267,7 @@ let all_product = [
   },
   {
     id: 28,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Boys Green-Dim Colourblocked Hooded Sweatshirt",
     category: "kid",
     image: p28_img,
     new_price: 85.0,
@@ -302,25 +315,25 @@ let all_product = [
   },
   {
     id: 34,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Boys African Print Ruffle Trim Dress",
     category: "kid",
-    image: p34_img,
+    image: c14_img,
     new_price: 85.0,
     old_price: 120.5,
   },
   {
     id: 35,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Girls Black Star Jersey",
     category: "kid",
-    image: p35_img,
+    image: c12_img,
     new_price: 85.0,
     old_price: 120.5,
   },
   {
     id: 36,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Boys African Print Ruffle Trim Dress",
     category: "kid",
-    image: p36_img,
+    image: c13_img,
     new_price: 85.0,
     old_price: 120.5,
   },
