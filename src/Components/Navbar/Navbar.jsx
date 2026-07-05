@@ -1,71 +1,133 @@
 import React, { useContext, useState } from "react";
-import "./Navbar.css";
 import logo from "../Assets/logo.png";
 import cart_icon from "../Assets/cart_icon.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ShopContext } from "../../Context/ShopContext";
+import { Button } from "@/components/ui/button";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
+import { cn } from "@/lib/utils";
+
+const navLinks = [
+  { label: "Shop", path: "/", key: "shop" },
+  { label: "Women", path: "/womens", key: "womens" },
+  { label: "Men", path: "/mens", key: "mens" },
+  { label: "Kids", path: "/kids", key: "kids" },
+];
+
+const NavLink = ({ link, active, onClick, className }) => (
+  <li className={cn("flex flex-col items-center gap-1", className)}>
+    <Link
+      to={link.path}
+      onClick={onClick}
+      className={cn(
+        "text-base font-medium text-muted-foreground transition-colors hover:text-foreground md:text-lg",
+        active && "text-foreground"
+      )}
+    >
+      {link.label}
+    </Link>
+    {active && (
+      <span className="h-0.5 w-4/5 rounded-full bg-brand" />
+    )}
+  </li>
+);
 
 export const Navbar = () => {
   const [menu, setMenu] = useState("shop");
+  const [mobileOpen, setMobileOpen] = useState(false);
   const { getTotalCart } = useContext(ShopContext);
+  const location = useLocation();
+
+  const isActive = (link) => {
+    if (link.path === "/") return location.pathname === "/";
+    return location.pathname.startsWith(link.path);
+  };
+
+  const handleNavClick = (key) => {
+    setMenu(key);
+    setMobileOpen(false);
+  };
+
   return (
-    <div className="navbar">
-      <div className="nav-logo">
-        <img src={logo} alt="" />
-        <p>SHOPIFY UCC</p>
-      </div>
-      <ul className="nav-menu">
-        <li
-          onClick={() => {
-            setMenu("shop");
-          }}
-        >
-          <Link to="/" style={{ textDecoration: "none" }}>
-            Shop
-          </Link>{" "}
-          {menu === "shop" ? <hr /> : <></>}
-        </li>
-        <li
-          onClick={() => {
-            setMenu("womens");
-          }}
-        >
-          <Link to="/womens" style={{ textDecoration: "none" }}>
-            Women
-          </Link>{" "}
-          {menu === "womens" ? <hr /> : <></>}
-        </li>
-        <li
-          onClick={() => {
-            setMenu("mens");
-          }}
-        >
-          <Link to="/mens" style={{ textDecoration: "none" }}>
-            Men
-          </Link>{" "}
-          {menu === "mens" ? <hr /> : <></>}
-        </li>
-        <li
-          onClick={() => {
-            setMenu("kids");
-          }}
-        >
-          <Link to="/kids" style={{ textDecoration: "none" }}>
-            Kids{" "}
+    <nav className="sticky top-0 z-40 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-16 items-center justify-between gap-4 md:h-20">
+        <Link to="/" className="flex items-center gap-2">
+          <img src={logo} alt="Shopify UCC" className="h-8 w-8 md:h-10 md:w-10" />
+          <p className="text-lg font-semibold text-foreground md:text-2xl">
+            SHOPIFY UCC
+          </p>
+        </Link>
+
+        <ul className="hidden items-center gap-8 lg:flex xl:gap-12">
+          {navLinks.map((link) => (
+            <NavLink
+              key={link.key}
+              link={link}
+              active={isActive(link)}
+              onClick={() => setMenu(link.key)}
+            />
+          ))}
+        </ul>
+
+        <div className="flex items-center gap-3 md:gap-6">
+          <Link to="/login" className="hidden sm:block">
+            <Button
+              variant="outline"
+              className="rounded-full border-muted-foreground/30 px-6 text-base font-medium md:h-12 md:px-8 md:text-lg"
+            >
+              Login
+            </Button>
           </Link>
-          {menu === "kids" ? <hr /> : <></>}
-        </li>
-      </ul>
-      <div className="nav-login-cart">
-        <Link to="/login">
-          <button>Login</button>
-        </Link>
-        <Link to="/cart">
-          <img src={cart_icon} alt="" />
-        </Link>
-        <div className="nav-cart-count">{getTotalCart()}</div>
+
+          <Link to="/cart" className="relative">
+            <img src={cart_icon} alt="Cart" className="h-6 w-6 md:h-7 md:w-7" />
+            {getTotalCart() > 0 && (
+              <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-brand text-xs font-medium text-white">
+                {getTotalCart()}
+              </span>
+            )}
+          </Link>
+
+          <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon" className="lg:hidden">
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Open menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[280px] sm:w-[320px]">
+              <SheetHeader>
+                <SheetTitle>Menu</SheetTitle>
+              </SheetHeader>
+              <ul className="mt-8 flex flex-col gap-6">
+                {navLinks.map((link) => (
+                  <NavLink
+                    key={link.key}
+                    link={link}
+                    active={isActive(link)}
+                    onClick={() => handleNavClick(link.key)}
+                    className="items-start"
+                  />
+                ))}
+              </ul>
+              <Link to="/login" onClick={() => setMobileOpen(false)} className="mt-8 block">
+                <Button className="w-full rounded-full" variant="outline">
+                  Login
+                </Button>
+              </Link>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
-    </div>
+    </nav>
   );
 };
+
 export default Navbar;

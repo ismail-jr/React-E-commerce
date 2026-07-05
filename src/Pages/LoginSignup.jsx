@@ -1,25 +1,42 @@
 import React from "react";
-import "./CSS/loginsignup.css";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Card, CardContent } from "@/components/ui/card";
 
 const LoginSignup = () => {
   return (
-    <div className="loginSignup">
-      <div className="loginSignup-container">
-        <h1>Sign Up</h1>
-        <div className="loginSignup-fields">
-          <input type="text" placeholder="Your name:" />
-          <input type="email" placeholder="Email Address:" />
-          <input type="password" placeholder="Password:" />
-        </div>
-        <button className="signup-btn">Continue</button>
-        <p className="have-acc">
-          Already have an account <span>login here</span>
-        </p>
-        <div className="terms">
-          <input type="checkbox" id="" name="" />
-          <p>By continuing, I agree to the term of use & privacy policy</p>
-        </div>
-      </div>
+    <div className="container flex min-h-[60vh] items-center justify-center py-10 md:py-16">
+      <Card className="w-full max-w-md">
+        <CardContent className="space-y-6 p-6 md:p-8">
+          <h1 className="text-center text-2xl font-semibold md:text-3xl">
+            Sign Up
+          </h1>
+          <div className="space-y-4">
+            <Input type="text" placeholder="Your name:" className="h-11" />
+            <Input type="email" placeholder="Email Address:" className="h-11" />
+            <Input
+              type="password"
+              placeholder="Password:"
+              className="h-11"
+            />
+          </div>
+          <Button className="h-11 w-full rounded-full bg-brand hover:bg-brand/90">
+            Continue
+          </Button>
+          <p className="text-center text-sm text-muted-foreground">
+            Already have an account{" "}
+            <span className="cursor-pointer font-medium text-brand">
+              login here
+            </span>
+          </p>
+          <div className="flex items-start gap-2">
+            <input type="checkbox" id="terms" className="mt-1" />
+            <label htmlFor="terms" className="text-xs text-muted-foreground md:text-sm">
+              By continuing, I agree to the term of use & privacy policy
+            </label>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 };
