@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
-import logo from "../Assets/logo.png";
 import cart_icon from "../Assets/cart_icon.png";
 import { Link, useLocation } from "react-router-dom";
 import { ShopContext } from "../../Context/ShopContext";
+import Logo from "../Logo/Logo";
 import { Button } from "@/Components/ui/button";
 import {
   Sheet,
@@ -58,12 +58,7 @@ export const Navbar = () => {
   return (
     <nav className="sticky top-0 z-40 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between gap-4 md:h-20">
-        <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="Shopify UCC" className="h-8 w-8 md:h-10 md:w-10" />
-          <p className="text-lg font-semibold text-foreground md:text-2xl">
-            SHOPIFY UCC
-          </p>
-        </Link>
+        <Logo />
 
         <ul className="hidden items-center gap-8 lg:flex xl:gap-12">
           {navLinks.map((link) => (

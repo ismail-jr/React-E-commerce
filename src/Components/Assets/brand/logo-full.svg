@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" fill="none" role="img" aria-label="Shopify UCC">
+  <g transform="translate(0 0)">
+    <rect width="64" height="64" rx="14" fill="#FF4141"/>
+    <path
+      d="M18 24c0-2.2 1.8-4 4-4h20c2.2 0 4 1.8 4 4v3H18v-3Z"
+      fill="#fff"
+      fill-opacity="0.95"
+    />
+    <path
+      d="M22 20c0-3.3 2.7-6 6-6h8c3.3 0 6 2.7 6 6"
+      stroke="#fff"
+      stroke-width="2.5"
+      stroke-linecap="round"
+    />
+    <path
+      d="M16 27h32l-2.4 22c-.3 2.5-2.4 4.4-4.9 4.4H23.3c-2.5 0-4.6-1.9-4.9-4.4L16 27Z"
+      fill="#fff"
+    />
+    <path
+      d="M28 34h8v10c0 2.2-1.8 4-4 4s-4-1.8-4-4V34Z"
+      fill="#FF4141"
+    />
+    <circle cx="44" cy="18" r="5" fill="#171717"/>
+    <path
+      d="M44 15.5v5M41.5 18h5"
+      stroke="#fff"
+      stroke-width="1.5"
+      stroke-linecap="round"
+    />
+  </g>
+  <text
+    x="80"
+    y="42"
+    fill="#171717"
+    font-family="Poppins, Arial, sans-serif"
+    font-size="22"
+    font-weight="700"
+    letter-spacing="0.5"
+  >
+    SHOPIFY UCC
+  </text>
+</svg>

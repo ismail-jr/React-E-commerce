@@ -1,9 +1,9 @@
 import React from "react";
-import footer_image from "../Assets/logo_big.png";
 import instagram_icon from "../Assets/instagram_icon.png";
 import pintester_icon from "../Assets/pintester_icon.png";
 import whatsapp_icon from "../Assets/whatsapp_icon.png";
 import { Separator } from "@/Components/ui/separator";
+import Logo from "../Logo/Logo";
 
 const Footer = () => {
   const brandName = "Shopify UCC";
@@ -39,11 +39,7 @@ const Footer = () => {
     <footer className="mt-auto border-t bg-background">
       <div className="container flex flex-col items-center gap-8 py-10 md:gap-10 md:py-14">
         <div className="flex flex-col items-center gap-3">
-          <img
-            src={footer_image}
-            alt={`${brandName} logo`}
-            className="h-16 w-auto md:h-20"
-          />
+          <Logo variant="mark" showText={false} size="lg" linkTo={null} className="md:[&_img]:h-20 md:[&_img]:w-20" />
           <p className="text-xl font-semibold md:text-2xl">
             {brandName.toUpperCase()}
           </p>
