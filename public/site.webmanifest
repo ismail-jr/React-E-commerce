@@ -1,0 +1,20 @@
+{
+  "name": "Shopify UCC",
+  "short_name": "Shopify UCC",
+  "description": "Stylish clothing for women, men, and kids",
+  "icons": [
+    {
+      "src": "/logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ff4141",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
