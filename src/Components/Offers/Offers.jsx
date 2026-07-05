@@ -1,6 +1,6 @@
 import React from "react";
 import exclusive_image from "../Assets/exclusive_image.png";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/Components/ui/button";
 
 const Offers = () => {
   return (

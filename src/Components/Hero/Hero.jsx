@@ -2,7 +2,7 @@ import React from "react";
 import hand_icon from "../Assets/hand_icon.png";
 import arrow_icon from "../Assets/arrow.png";
 import hero from "../Assets/c22.jpeg";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/Components/ui/button";
 
 const Hero = () => {
   return (
