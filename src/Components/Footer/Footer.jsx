@@ -3,7 +3,7 @@ import footer_image from "../Assets/logo_big.png";
 import instagram_icon from "../Assets/instagram_icon.png";
 import pintester_icon from "../Assets/pintester_icon.png";
 import whatsapp_icon from "../Assets/whatsapp_icon.png";
-import { Separator } from "@/components/ui/separator";
+import { Separator } from "@/Components/ui/separator";
 
 const Footer = () => {
   const brandName = "Shopify UCC";

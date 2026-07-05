@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import star_icon from "../Assets/star_icon.png";
 import star_dull_icon from "../Assets/star_dull_icon.png";
 import { ShopContext } from "../../Context/ShopContext";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/Components/ui/button";
 import { cn } from "@/lib/utils";
 
 const ProductDisplay = ({ product }) => {

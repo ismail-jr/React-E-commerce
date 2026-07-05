@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../../Context/ShopContext";
 import remove_icon from "../Assets/cart_cross_icon.png";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Card, CardContent } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
+import { Button } from "@/Components/ui/button";
+import { Input } from "@/Components/ui/input";
+import { Card, CardContent } from "@/Components/ui/card";
+import { Separator } from "@/Components/ui/separator";
 
 const CartItems = () => {
   const { getTotalAmount, all_product, cartItems, removeFromCart } =
